@@ -1,0 +1,16 @@
+<main class="d-flex align-items-center">
+  <section class="container d-flex flex-wrap gap-3 justify-items-center align-items-center">
+    <article class="card" style="width: 18rem" *ngFor="let movie of dataResponseArray">
+      <img src="{{movie.Poster}}" style="height: 450px;" class="card-img-top" alt="..." />
+      <div class="card-body">
+        <h5 class="card-title text-nowrap overflow-hidden">{{movie.Title}}</h5>
+        <p class="card-text">
+          {{movie.Released}}
+        </p>
+        <a href="#" class="btn btn-primary">Go somewhere</a>
+      </div>
+    </article>
+    <div *ngFor="let movie of dataResponseArray">
+    </div>
+  </section>
+</main>
